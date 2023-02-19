@@ -9,4 +9,4 @@ def get_sync(url: str) -> Dict:
 
 
 async def get_async(url: str) -> Dict:
-    return await asyncio.to_thread(get_async, url)
+    return await asyncio.to_thread(get_sync, url)
